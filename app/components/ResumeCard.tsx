@@ -1,14 +1,18 @@
-import type { Route } from "./+types/home";
 import Navbar from "~/components/Navbar";
 import ResumeCard from "~/components/ResumeCard";
 import {usePuterStore} from "~/lib/puter";
 import {Link, useNavigate} from "react-router";
 import {useEffect, useState} from "react";
 
-export function meta({}: Route.MetaArgs) {
+import type { MetaArgs } from "react-router";
+
+
+
+
+export function meta({}: MetaArgs) {
   return [
     { title: "Resumind" },
-    { name: "description", content: "Smart feedback for your dream job!" },
+    { name: "description", content: "Smart feedback for your dream job!" }
   ];
 }
 
